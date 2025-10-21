@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto Adriana Paez</title>
+    <!-- vCard actualizada con perfiles sociales y sin email -->
+    <meta http-equiv="refresh" content="0; url=data:text/vcard;charset=utf-8,BEGIN%3AVCARD%0AVERSION%3A3.0%0AFN%3APablo%20C.%20Casta%C3%B1eda%20Camacho%0AN%3ACasta%C3%B1eda%20Camacho%3BPablo%20C.%3B%3B%3B%0AORG%3AC%26C%20Services%20S.A.S.%0ATITLE%3ACEO%0ATEL%3BWORK%3BVOICE%3A%2B573133482755%0AURL%3Ahttps%3A%2F%2Fwww.cyc-bpo.com%0AX-SOCIALPROFILE%3Btype%3Dinstagram%3Ahttps%3A%2F%2Fwww.instagram.com%2Fcycservices.sas%2F%0AX-SOCIALPROFILE%3Btype%3Dlinkedin%3Ahttps%3A%2F%2Fwww.linkedin.com%2Fin%2Fcyc-services-3b4485244%2F%0ANOTE%3ABPO%20especializado%20en%20gesti%C3%B3n%20de%20cartera%20y%20soluciones%20contact%20center.%0AEND%3AVCARD">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Material+Icons&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+            box-sizing: border-box;
+            padding: 20px 10px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .card-container {
+            background-color: white;
+            border-radius: 24px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 380px;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+        .header-bg {
+            /* CAMBIO 1: Nuevo degradado con el color solicitado y uno más claro */
+            background: linear-gradient(135deg, #9ce0f9, #59cbe8);
+            padding: 40px 20px 20px 20px;
+            text-align: center;
+            position: relative;
+            color: white;
+            border-bottom-left-radius: 100% 25px;
+            border-bottom-right-radius: 100% 25px;
+        }
+        .profile-logo {
+            width: 110px;
+            height: 110px;
+            background-color: #e0e0e0;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            overflow: hidden;
+            border: 4px solid white;
+        }
+        .profile-logo img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+        .name {
+            font-size: 1.6em;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #ffffff;
+            line-height: 1.2;
+        }
+        .title {
+            font-size: 1em;
+            font-weight: 400;
+            color: #e0e0e0;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        .contact-icon-header {
+            font-size: 1.5em;
+            /* CAMBIO 2: Color del icono del teléfono */
+            color: #59cbe8;
+            background-color: #ffffff;
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 20px;
+        }
+        .content {
+            padding: 25px;
+            text-align: center;
+        }
+        .description {
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+        .contact-details {
+            background-color: #f8f9fa;
+            border-radius: 15px;
+            padding: 10px;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+        .detail-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 10px;
+            color: #333;
+        }
+        .detail-item:not(:last-child) {
+            border-bottom: 1px solid #e9ecef;
+        }
+        .detail-icon {
+            font-size: 24px;
+            /* CAMBIO 3: Color de los iconos de la lista de detalles */
+            color: #59cbe8;
+            margin-right: 15px;
+            width: 25px;
+            text-align: center;
+        }
+        .detail-text {
+            font-size: 0.95em;
+            flex-grow: 1;
+        }
+        .detail-text strong {
+            display: block;
+            font-size: 0.75em;
+            color: #888;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-bottom: 2px;
+        }
+        .detail-text a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            word-break: break-all;
+        }
+        .detail-text a:hover {
+            text-decoration: underline;
+        }
+        .add-contact-button {
+            /* CAMBIO 4: Color de fondo del botón */
+            background: #59cbe8;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.1em;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 0 auto;
+            text-decoration: none;
+            /* CAMBIO 5: Sombra del botón para que coincida con el nuevo color */
+            box-shadow: 0 4px 15px rgba(89, 203, 232, 0.4);
+        }
+        .add-contact-button:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+        .add-contact-button .material-icons {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="header-bg">
+            <div class="profile-logo">
+                <img src="https://imgur.com/a/6W3Qi33.jpg" alt="Foto de Adriana Paez">
+            </div>
+            <div class="name">Adriana N. Paéz Castiblanco</div>
+            <div class="title">Gerente de Operaciones</div>
+            <div class="contact-icon-header">
+                <span class="material-icons">call</span>
+            </div>
+        </div>
+
+        <div class="content">
+            <p class="description">BPO especializado en gestión de cartera y soluciones de contact center.</p>
+
+            <div class="contact-details">
+                <div class="detail-item">
+                    <span class="material-icons detail-icon">call</span>
+                    <div class="detail-text">
+                        <strong>Teléfono (WhatsApp)</strong>
+                        <a href="https://wa.me/573208261935" target="_blank">3208261935</a>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <span class="material-icons detail-icon">language</span>
+                    <div class="detail-text">
+                        <strong>Sitio web</strong>
+                        <a href="https://www.cyc-bpo.com/contactenos/adriana-paez/" target="_blank">www.cyc-bpo.com</a>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <span class="material-icons detail-icon">business_center</span>
+                    <div class="detail-text">
+                        <strong>Empresa y Cargo</strong>
+                        C&C SERVICES S.A.S. <br> Gerente de Operaciones
+                    </div>
+                </div>
+                 <div class="detail-item">
+                    <span class="material-icons detail-icon">camera_alt</span>
+                    <div class="detail-text">
+                        <strong>Instagram</strong>
+                        <a href="https://www.instagram.com/cycservices.sas/" target="_blank">@cycservices.sas</a>
+                    </div>
+                </div>
+                
+                <div class="detail-item">
+                    <span class="material-icons detail-icon">public</span>
+                    <div class="detail-text">
+                        <strong>LinkedIn</strong>
+                        <a href="https://www.linkedin.com/in/cyc-services-3b4485244/" target="_blank">C&C Services</a>
+                    </div>
+                </div>
+            </div>
+           
+            <a href="data:text/vcard;charset=utf-8,BEGIN%3AVCARD%0AVERSION%3A3.0%0AFN%3AAdriana%20N.%20Paez%C3%B1eda%20Castiblanco%0AN%3APaez%C3%B1eda%20Castiblanco%3BAdriana%20C.%3B%3B%3B%0AORG%3AC%26C%20Services%20S.A.S.%0ATITLE%3ACEO%0ATEL%3BWORK%3BVOICE%3A%2B573133482755%0AURL%3Ahttps%3A%2F%2Fwww.cyc-bpo.com%0AX-SOCIALPROFILE%3Btype%3Dinstagram%3Ahttps%3A%2F%2Fwww.instagram.com%2Fcycservices.sas%2F%0AX-SOCIALPROFILE%3Btype%3Dlinkedin%3Ahttps%3A%2F%2Fwww.linkedin.com%2Fin%2Fcyc-services-3b4485244%2F%0ANOTE%3ABPO%20especializado%20en%20gesti%C3%B3n%20de%20cartera%20y%20soluciones%20contact%20center.%0AEND%3AVCARD" download="Adriana_Paez.vcf" class="add-contact-button">
+                <span class="material-icons">person_add</span>
+                Añadir contacto
+            </a>
+        </div>
+    </div>
+</body>
+</html>
